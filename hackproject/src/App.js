@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
 import Home from './pages';
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/recycling' element={<Recycling />} />
                 <Route path='/ListForm' element={<ListForm />} />
             </Routes>
+            <Footer />
         </Router>
     );
 }
