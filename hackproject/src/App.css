@@ -19,6 +19,11 @@ a {
   }
 }
 
+.eventColumn {
+  display:grid;
+  grid-template-columns: 2fr 8fr;
+}
+
 #header {
   background-color: #BA0C2F;
   height: 7rem;
@@ -40,7 +45,7 @@ a {
   align-items: center;
   height: 7rem;
   width: 100%;
-  position: absolute;
+  position:relative;
   bottom: 0;
 }
 
@@ -58,10 +63,16 @@ a {
   margin: 10px;
 }
 
+
 .column {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
+}
+
+p.indent {
+  margin-left: 10px;
+  text-align: left;
 }
 
 * {
@@ -75,15 +86,15 @@ h1, p {
 }
 
 .recycling h2 {
-  font-size: 4vh;
+  font-size: 3vh;
   padding: 10px;
   text-align: center;
 }
 
 .recycling h3 {
   padding: 10px;
-  font-size: 3vh;
-  text-align: center;
+  font-size: 2vh;
+  text-align: left;
 }
 
 .recycling p {
@@ -95,6 +106,8 @@ h1, p {
 ul.recycleList {
   list-style-type: none;
   font-size: 2vh;
+  text-align: left;
+  margin-left: 40px;
 }
 
 .navbar {
@@ -107,3 +120,4 @@ ul.recycleList {
   color: #fff;
   padding: 10px;
 }
+

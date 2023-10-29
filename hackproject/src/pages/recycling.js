@@ -2,45 +2,62 @@ import React from 'react';
  
 const Recycling = () => {
     return (
-        <div class="content-holder recycling">
+        <div class="recycling">
+
+        <div class = "content-holder">
         <h1>What Can I Recycle?</h1>
         <div class = "column">
-          <div>
-            <h3><i>Many types of plastic can be recycled, like bottles, containers, and cups</i></h3>
-              <br/>
+          <div> 
+            <div class = "column">
+              <div>
             <h3>Examples of Acceptable Items:</h3>
             <ul class = "recycleList">
               <li>✔ Plastic bottles and jugs</li>
               <li>✔ Fountain drink cups</li>
-              <li>✔ Laundry detergent bottles, tide pod containers</li>
+              <li>✔ Laundry detergent bottles</li>
               <li>✔ Shampoo bottles</li>
               <li>✔ Yogurt containers</li>
               <li>✔ Butter tubs</li>
               <li>✔ Fruit cups</li>
-              <br/>
             </ul>
-            <h3>Tip: please reattach lids!</h3>
-          </div>
-          <div>
-            <h3><i> Sorting materials can be 
-            expensive and time consuming for recycling facilities, so take note of what we cannot recycle.</i></h3>
-            <br/>
+            </div>
+            <div>
             <h3>Examples of Unnacceptable Items:</h3>
             <ul class = "recycleList">
               <li>🚫 Plastic bags</li>
               <li>🚫 Pizza boxes</li>
-              <li>🚫 Plastic utensils (forks, knives, spoons, straws)</li>
+              <li>🚫 Plastic utensils</li>
               <li>🚫 Candy wrappers</li>
-              <li>🚫 Bubble wrappers</li>
               <li>🚫 Styrofoam</li>
               <li>🚫 To-go food containers</li>
               <li>🚫 Potato chips bags</li>
-              <br/>
+              <br></br>
             </ul>
-            <h3> Tip: anything contaminated with food, grease, or oil cannot be recycled!</h3>
+            </div>
+             </div>
+             </div>
+          <div>
+            <h3>Tips For Smart Recycling!</h3>
+            <ul class = "recycleList">
+              <li>❐ Lids, caps and labels can be kept on recyclable containers</li>
+              <li>❐ Rinse dirty recyclables</li>
+              <li>❐ Do not recycle anything contaminated with food grease or oil</li>
+              <li>❐ Plastic grocery bags should not be directly recycled, but many grocery stores can recycle them!</li>
+              <li>❐ Yard waste can be placed in biodegradable bags for separate collection</li>
+              <li>❐ Sorting recyclable materials, like seperating bottles from paper, is not necessary in Columbus</li>
+              <li>❐ For more information, check out <a href="https://fod.osu.edu/recycling"> OSU Recycle Right</a></li>
+            </ul>
+            <br></br>
           </div>
         </div>
         </div>
+
+        <div class="content-holder">
+          <h1>Where Can I Recycle?</h1>
+          <img src="./RecycleMap.jpg" width="85%"></img>
+        </div>
+        </div>
+        
     );
 };
  

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route }
 import Home from './pages';
 import Recycling from './pages/recycling';
 import ListForm from './pages/ListForm';
+import Events from './pages/Events';
  
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/index' element={<Home />} />
                 <Route path='/recycling' element={<Recycling />} />
                 <Route path='/ListForm' element={<ListForm />} />
+                <Route path='/Events' element={<Events/>} />
             </Routes>
             <Footer />
         </Router>

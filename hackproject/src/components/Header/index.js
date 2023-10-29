@@ -10,6 +10,7 @@ const Header = () => {
                 <Link to="/index">Home</Link>
                 <Link to="/recycling">Recycling</Link>
                 <Link to="/ListForm">List an Item Form</Link>
+                <Link to="/Events">Events</Link>
             </div>
         </div>
     </header>
