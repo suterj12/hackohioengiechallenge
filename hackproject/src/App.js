@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Recycling from './pages/recycling';
 import ListForm from './pages/ListForm';
 import Events from './pages/Events';
+import PlasticDrawers from './pages/Listings/PlasticDrawers';
  
 function App() {
     const [inputs, setInputs] = useState({});
@@ -34,6 +35,7 @@ function App() {
                         <Route path='/recycling' element={<Recycling />} />
                         <Route path='/ListForm' element={<ListForm inputs={inputs} onChange={handleChange} handleSubmit={handleSubmit}/>} />
                         <Route path='/Events' element={<Events/>} />
+                        <Route path='/Listings/PlasticDrawers' element={<PlasticDrawers/>}/>
                     </Routes>
                 </div>
                 <Footer />
