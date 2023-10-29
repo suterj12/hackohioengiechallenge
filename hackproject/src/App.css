@@ -77,24 +77,24 @@ h1, p {
 .recycling h2 {
   font-size: 4vh;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .recycling h3 {
   padding: 10px;
   font-size: 3vh;
-  text-align: left;
+  text-align: center;
 }
 
 .recycling p {
   padding: 10px;
   font-size: 2vh;
+  text-align: center;
 }
 
 ul.recycleList {
   list-style-type: none;
   font-size: 2vh;
-  text-indent: 5%;
 }
 
 .navbar {
