@@ -11,6 +11,11 @@ body {
   text-align: center;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 a {
   color: rgba(#000, 0.7);
 
@@ -46,8 +51,12 @@ a {
   align-items: center;
   height: 7rem;
   width: 100%;
-  position:relative;
+  position:absolute;
   bottom: 0;
+}
+
+#content-wrap {
+  padding-bottom: 7rem;    /* Footer height */
 }
 
 .main-content {

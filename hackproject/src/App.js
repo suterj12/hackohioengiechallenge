@@ -26,14 +26,18 @@ function App() {
 
     return (
         <Router>
-            <Header />
-            <Routes>
-                <Route path='/index' element={<Home />} />
-                <Route path='/recycling' element={<Recycling />} />
-                <Route path='/ListForm' element={<ListForm />} />
-                <Route path='/Events' element={<Events/>} />
-            </Routes>
-            <Footer />
+            <div id="page-container">
+                <div id="content-wrap">
+                <Header />
+                    <Routes>
+                        <Route path='/index' element={<Home />} />
+                        <Route path='/recycling' element={<Recycling />} />
+                        <Route path='/ListForm' element={<ListForm inputs={inputs} onChange={handleChange} handleSubmit={handleSubmit}/>} />
+                        <Route path='/Events' element={<Events/>} />
+                    </Routes>
+                </div>
+                <Footer />
+            </div>
         </Router>
     );
 }

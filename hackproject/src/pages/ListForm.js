@@ -12,10 +12,10 @@ function ListForm(props) {
           onChange={props.onChange}
         />
         </label>
-        <label>Category:
+        <label>Description:
           <input 
             type="text" 
-            name="category" 
+            name="description" 
             defaultValue=""
             onChange={props.onChange}
           />
