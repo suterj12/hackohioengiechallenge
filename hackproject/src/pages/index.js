@@ -1,8 +1,8 @@
 import React from 'react';
  
-const Home = () => {
+const NotHome = (props) => {
     return (
-        <div class="display-grid">
+        <div id="listings" class="display-grid">
             <div><img src="./HubCap.jpeg" alt="Stolen car part."></img><p>HubCap</p></div>
             <div>2</div>
             <div>3</div>
@@ -15,4 +15,4 @@ const Home = () => {
     );
 };
  
-export default Home;
+export default NotHome;
