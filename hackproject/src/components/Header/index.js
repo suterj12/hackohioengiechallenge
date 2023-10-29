@@ -9,6 +9,7 @@ const Header = () => {
             <div class="navbar">
                 <Link to="/index">Home</Link>
                 <Link to="/recycling">Recycling</Link>
+                <Link to="/ListForm">List an Item Form</Link>
             </div>
         </div>
     </header>
