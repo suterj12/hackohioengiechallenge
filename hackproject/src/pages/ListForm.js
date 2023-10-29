@@ -1,49 +1,31 @@
 import React from 'react';
-import { useReducer, useState } from 'react';
+import ReactDOM from 'react-dom/client';
 
-const formReducer = (state, event) => {
-    return {
-      ...state,
-      [event.name]: event.value
-    }
-   }
-
-function ListForm(){
-    const [formData, setFormData] = useReducer(formReducer, {});
-    const [submitting, setSubmitting] = useState(false);
-
-    const handleSubmit = event => {
-    event.preventDefault();
-    setSubmitting(true);
-    alert('Thank you for submitting this item!')
-    setTimeout(() => {
-      setSubmitting(false);
-    }, 3000);
-  }
-
-  const handleChange = event => {
-    setFormData({
-      name: event.target.name,
-      value: event.target.value,
-    });
-  }
+function ListForm(props) {
     return (
-        <div className="wrapper">
-        <h1>How About Them Apples</h1>
-        {submitting &&
-            <div>Submtting Form...</div>
-        }
-        <form onSubmit={handleSubmit}>
-            <fieldset>
-            <label>
-                <p>Name</p>
-                <input name="name" onChange={handleChange}/>
-            </label>
-            </fieldset>
-            <button type="submit">Submit</button>
+      <form onSubmit={props.handleSubmit}>
+        <label>Item Name:
+        <input 
+          type="text" 
+          name="item" 
+          defaultValue=""
+          onChange={props.onChange}
+        />
+        </label>
+        <label>Category:
+          <input 
+            type="text" 
+            name="category" 
+            defaultValue=""
+            onChange={props.onChange}
+          />
+          </label>
+          <input type="submit" />
       </form>
-    </div>
     )
-}
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<ListForm />);
 
 export default ListForm;
