@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
  
-const Home = () => {
+const NotHome = (props) => {
     return (
         <div class="display-grid">
             
@@ -40,4 +40,4 @@ const Home = () => {
     );
 };
  
-export default Home;
+export default NotHome;
