@@ -17,12 +17,18 @@ body {
 }
 
 a {
-  color: rgba(#000, 0.7);
+  color: rgba(#000000, 0.7);
 
   &:focus,
   &:hover {
     color: rgba(#000, 0.6);
   }
+}
+
+#listings a {
+  color: #0008ff;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .eventColumn {
