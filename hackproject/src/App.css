@@ -54,6 +54,7 @@ a {
 
 .column {
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -67,17 +68,19 @@ h1, p {
   padding: 10px;
 }
 
-h2{
+.recycling h2 {
   font-size: 4vh;
+  padding: 10px;
   text-align: left;
 }
 
-h3{
+.recycling h3 {
+  padding: 10px;
   font-size: 3vh;
   text-align: left;
 }
 
-p {
+.recycling p {
   padding: 10px;
   font-size: 2vh;
 }
@@ -86,4 +89,15 @@ ul.recycleList {
   list-style-type: none;
   font-size: 2vh;
   text-indent: 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
 }

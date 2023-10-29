@@ -2,7 +2,7 @@ import React from 'react';
  
 const Recycling = () => {
     return (
-        <div>
+        <div class="content-holder recycling">
         <h1>What Can I Recycle?</h1>
         <div class = "column">
           <div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
 import Home from './pages';
@@ -9,7 +9,7 @@ import Recycling from './pages/recycling';
 function App() {
     return (
         <Router>
-            <Navbar />
+            <Header />
             <Routes>
                 <Route path='/index' element={<Home />} />
                 <Route path='/recycling' element={<Recycling />} />
