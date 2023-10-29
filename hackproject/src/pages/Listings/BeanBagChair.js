@@ -1,7 +1,9 @@
 import React from 'react';
 
-const BeanBagChairs = () => {
-
+const BeanBagChair = () => {
+    return(
+        <div class="BeanBagChair"></div>
+    );
 }
 
-export default BeanBagChairs;
+export default BeanBagChair;
