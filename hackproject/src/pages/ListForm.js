@@ -15,24 +15,34 @@ function ListForm(props) {
             </label>
         </div>
         <div class="form-spacer">
-            <label>On/Off Campus:
+            <label>Description:
             <input 
                 type="text" 
-                name="onoffcampus" 
+                name="description" 
                 defaultValue=""
                 onChange={props.onChange}
             />
             </label>
           </div>
+          <div class="form-spacer categories">
+            <label for="pickup">Pickup From Seller</label><br />
+            <input type="radio" id="pickup" name="pickup" value="pickup" onChange={props.onChange}/>
+            <label for="meet">Meet on Campus</label><br />
+            <input type="radio" id="meet" name="meet" value="meet" onChange={props.onChange}/>
+            <label for="dropoff">Seller Dropoff</label><br />
+            <input type="radio" id="dropoff" name="dropoff" value="dropoff" onChange={props.onChange}/>
+          </div>
           <div class="form-spacer">
-            <label>Area:
-            <input 
-                type="text" 
-                name="area" 
-                defaultValue=""
-                onChange={props.onChange}
-            />
-            </label>
+            <label for="areas">Choose an Area:</label>
+            <select id="areas" name="areas" onChange={props.onChange}>
+                <option value="Off Campus, North">Off Campus: North</option>
+                <option value="On Campus, North">On Campus: North</option>
+                <option value="Off Campus, South">Off Campus: South</option>
+                <option value="On Campus, South">On Campus: South</option>
+                <option value="Off Campus, Central">Off Campus: Central</option>
+                <option value="Off Campus, North East">Off Campus: North East</option>
+                <option value="Off Campus, North West">Off Campus: North West</option>
+            </select>
           </div>
           <input type="submit" />
       </form>

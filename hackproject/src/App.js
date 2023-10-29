@@ -84,7 +84,7 @@ function App() {
         link.textContent = inputs.item;
         listing.appendChild(link);
         let name = document.createElement("p");
-        name.textContent = inputs.onoffcampus + ", " + inputs.area 
+        name.textContent = inputs.areas
         listing.appendChild(name);
         listings.push(listing);
     }
