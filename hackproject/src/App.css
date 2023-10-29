@@ -1,38 +1,89 @@
-.App {
+body {
+  background-color: #A7B1B7;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+a {
+  color: rgba(#000, 0.7);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header {
+  background-color: #BA0C2F;
+  height: 7rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+#header h1 {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer {
+  background-color: #BA0C2F;
+  height: 7rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.content-holder {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(#000, 0.1);
+  margin: 10px;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, p {
+  padding: 10px;
+}
+
+h2{
+  font-size: 4vh;
+  text-align: left;
+}
+
+h3{
+  font-size: 3vh;
+  text-align: left;
+}
+
+p {
+  padding: 10px;
+  font-size: 2vh;
+}
+
+ul.recycleList {
+  list-style-type: none;
+  font-size: 2vh;
+  text-indent: 5%;
 }
